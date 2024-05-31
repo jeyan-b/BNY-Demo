@@ -1,0 +1,22 @@
+<table class="table">
+    <thead>
+        <th>Name</th>
+        <th>Age</th>
+        <th>Email</th>
+        <th>Gender</th>
+        <th>Mobile</th>
+    </thead>
+    <tbody>
+       
+            @for (user of users; track user) {              
+                <tr>
+            <td>{{user.firstName}} {{user.lastName}}</td>
+            <td>{{user.age}}</td>
+            <td>{{user.email}}</td>
+            <td>{{user.gender}}</td>
+            <td>{{user.mobile}}</td>
+        </tr>
+        }
+        
+    </tbody>
+</table>
